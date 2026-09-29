@@ -5,7 +5,7 @@ from telethon.sessions import StringSession
 api_id = int(os.environ['API_ID'])
 api_hash = os.environ['API_HASH']
 session_string = os.environ['SESSION_STRING']
-REPLY_TEXT = os.environ.get('REPLY_TEXT', 'Привет! Напиши сюда: https://t.me/твой_чат')
+REPLY_TEXT = os.environ.get('REPLY_TEXT')
 
 client = TelegramClient(StringSession(session_string), api_id, api_hash)
 
